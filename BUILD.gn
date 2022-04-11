@@ -91,6 +91,7 @@ if (enable_perfetto_integration_tests) {
     ":perfetto_integrationtests",
     "examples/sdk:sdk_example",
     "test:client_api_example",
+    "test:issue_271",
     "test/stress_test",
   ]
 }

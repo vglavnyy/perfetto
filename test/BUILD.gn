@@ -82,6 +82,15 @@ if (!build_with_chromium && enable_perfetto_integration_tests) {
       "../protos/perfetto/trace/gpu:zero",
     ]
   }
+
+  executable("issue_271") {
+    sources = [ "../issue_271/issue_271.cc" ]
+    deps = [
+      "..:libperfetto_client_experimental",
+      "../gn:default_deps",
+      "../include/perfetto/tracing",
+    ]
+  }
 }  # if (!build_with_chromium && enable_perfetto_integration_tests)
 
 perfetto_fuzzer_test("end_to_end_shared_memory_fuzzer") {

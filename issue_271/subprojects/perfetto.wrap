@@ -1,0 +1,9 @@
+[wrap-git]
+# clone v24.2 into this subprojects directory
+directory = perfetto-v24.2
+url = https://github.com/google/perfetto.git
+revision = v24.2
+depth=1
+
+[provide]
+perfetto = dep_perfetto
